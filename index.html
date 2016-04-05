@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mobile Events</title>
+
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="character-container">
+		<div class="character">
+		</div>
+
+		<h2>Instructions</h2>
+		<p>Swipe Left = Walking Left</p>
+		<p>Swipe Right = Walking Right</p>
+		<p>Tap = Jump</p>
+	</div><!--character-container-->
+</div><!--container-->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<script>     
+
+$(document).bind('mobileinit',function(){         
+
+$.mobile.changePage.defaults.changeHash = false;         
+
+$.mobile.hashListeningEnabled = false;         
+
+$.mobile.pushStateEnabled = false;     
+
+}); 
+
+</script>
+
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
